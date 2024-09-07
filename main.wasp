@@ -1,0 +1,11 @@
+app egrim {
+  wasp: {
+    version: "^0.14.1"
+  },
+  title: "egrim"
+}
+
+route RootRoute { path: "/", to: MainPage }
+page MainPage {
+  component: import { MainPage } from "@src/MainPage"
+}
